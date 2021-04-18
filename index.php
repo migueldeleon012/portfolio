@@ -18,7 +18,7 @@
     </div>
     <!-- HOME -->
     <header id="home">
-        <div class="container-fluid full-height img-overlay">
+        <div class="container-fluid full-height img-overlay d-flex justify-content-center">
             <nav>
                 <div class="navbar-custom fixed-top">
                     <div class="logo-placeholder d-flex align-items-center">
@@ -37,6 +37,11 @@
                     </div>
                 </div>
             </nav>
+
+            <?php
+                $fullUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+                include 'includes/response.php';
+            ?>
 
             <div class="hero d-flex flex-column align-items-center justify-content-center">
                 <h1 class="bottom display-1 text-light text-uppercase">Hi! I'm Miguel de Leon</h1>

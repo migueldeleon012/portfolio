@@ -30,14 +30,13 @@
                         header('Location: ../index.php?form=invalidmessage');
                         exit();
                     } else{
-                        // $mailTo = 'miguelangelodeleon';
-                        // $subject = 'from portfolio';
-                        // $header = "From: $email";
-                        // $text = "You have received an email from $header \n\n $message";
+                        $mailTo = 'miguelangelodeleon';
+                        $subject = 'from portfolio';
+                        $header = "From: $email";
+                        $text = "You have received an email from $header \n\n $message";
 
-                        // mail($mailTo, $subject, $text, $header);
-                        // header("Location : ../index.php?form=success");
-                        exit();
+                        mail($mailTo, $subject, $text, $header);
+                        header("Location : ../index.php?form=success");
                     }
                 }
             }
